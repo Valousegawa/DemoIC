@@ -1,13 +1,16 @@
 package insta.ic.ic;
 
+import java.util.logging.Logger;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
+	private static Logger logger = Logger.getAnonymousLogger();
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	logger.log(null, "Hello World !");
     }
 }

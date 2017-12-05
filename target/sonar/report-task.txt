@@ -1,0 +1,6 @@
+projectKey=insta.2017.ic:ic
+serverUrl=http://localhost:9000
+serverVersion=6.7.0.33306
+dashboardUrl=http://localhost:9000/dashboard/index/insta.2017.ic:ic
+ceTaskId=AWAm-aUFVdsBRBMzm3vd
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWAm-aUFVdsBRBMzm3vd
