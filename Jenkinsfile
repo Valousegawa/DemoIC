@@ -8,9 +8,8 @@ pipeline {
 				bat 'mvn Test'
 			}
       	}
-    	node {
-			def files = findFiles(glob: '*.*') 
-			echo """${files[0].name} ${files[0].path} ${files[0].directory} ${files[0].length} ${files[0].lastModified}"""
+    	stage("List all files in directory") {
+			bat 'for /f "delims=" %a in ('cd') do @for /f %b in ('dir /b /a') do @echo %a\%b'
 		}
 	}
 }
