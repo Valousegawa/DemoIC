@@ -9,7 +9,9 @@ pipeline {
 			}
       	}
     	stage("List all files in directory") {
-			bat "for /f \"delims=\" %a in ('cd') do @for /f %b in ('dir /b /a') do @echo %a\\%b"
+    		steps {
+				bat "for /f \"delims=\" %a in ('cd') do @for /f %b in ('dir /b /a') do @echo %a\\%b"
+			}
 		}
 	}
 }
